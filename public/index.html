@@ -1,0 +1,232 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1">Optimize mobile viewport -->
+
+
+	<meta name="description" content="">
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+	<title>eduWebsite</title>
+
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+
+		<!-- Bootstrap CSS -->
+		<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+		<link href="css/lib/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Custom CSS -->
+
+		<link href="css/styles0.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="js/lib/modernizr-2.6.2.min.js"></script>
+<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/todos.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+
+
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+	<div class="container containerWidth">
+		<div class="carousel slide" id="myCarousel">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="1" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="2" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="3" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="4" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="5" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="6" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="7" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="8" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="9" data-target="#myCarousel"></li>
+						<li class="" data-slide-to="10" data-target="#myCarousel"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active" id="slide1">
+							<div class="carousel-caption">
+								<h4>Title 1</h4>
+								<p>
+									Description of title 1
+								</p>
+							</div>
+						</div>
+						<div class="item" id="slide2">
+							<div class="carousel-caption">
+								<h4>Title 2</h4>
+								<p>
+									Description of title 2
+								</p>
+							</div>
+						</div>
+						<div class="item" id="slide3">
+							<div class="carousel-caption">
+								<h4>Title 3</h4>
+								<p>
+									Description of title 3
+								</p>
+							</div>
+						</div>
+						<div class="item" id="slide4">
+							<div class="carousel-caption">
+								<h4>Title 4</h4>
+								<p>
+									Description of title 4
+								</p>
+							</div>
+						</div>
+						<div class="item" id="slide5">
+						</div>
+						<div class="item" id="slide6">
+						</div>
+						<div class="item" id="slide7">
+						</div>
+						<div class="item" id="slide8">
+						</div>
+						<div class="item" id="slide9">
+						</div>
+						<div class="item" id="slide10">
+						</div>
+					</div>
+					<a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+					<a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+				</div>
+
+				
+	</div>
+
+<div id="navbar">
+<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logo1.jpg" alt="" /></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse" id="navbar">
+					<ul class="nav navbar-nav pull-left">
+						<li class="active"><a href="#home">Home</a></li>
+						<li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown">Product <strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Booking</a></li>
+								<li><a href="#">Packages</a></li>
+								<li><a href="#">Tour</a></li>
+								<li class="divider"></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li class="dropdown-header">More Services
+								</li>
+							</ul>
+						</li>
+						<li class="active"><a href="#portfolio">Download</a></li>
+						<li class="active"><a href="#about">About Us</a></li>
+						<li class="active"><a href="#contact">Contact Us</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav pull-right">
+						<li class=""><a href="#myModal"  data-toggle="modal">Log In</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-user"> </span>My Profile</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-wrench">  </span>Settings</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off">  </span>Logout</a></li>
+							</ul>
+						</ul>
+					</li>
+				</div>
+</div>
+<div corelass="row" id="moreInfo">
+			<div class="col-sm-6">
+				<div class=" modal fade" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Login / Sign Up</h4>
+							</div><!--end of modal-header-->
+							<div class="modal-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab1" data-toggle="tab">Login</a></li>
+										<li><a href="#tab2" data-toggle="tab">Reset</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab1">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label for="inputEmail3" >UserName</label>
+													<input type="email" class="form-control" id="inputEmail3" placeholder="UserName">
+												</div>
+												<div class="form-group">
+													<label for="inputPassword3" class="control-label">Password</label>
+													<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+												</div>
+												<div class="form-group">
+													
+														<button class="col-sm-5 btn btn-medium btn-primary pull-right">Log In</button>
+														
+												</div>
+											</form>
+										</div>
+										<div class="tab-pane" id="tab2" >
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label for="inputEmail3" class="control-label">UserName</label>
+													<input type="text" class="form-control" id="inputEmail3" placeholder="UserName">
+												</div>
+												<div class="form-group">
+													<label for="inputPassword3" class="control-label">Old Password</label>
+													<input type="password" class="form-control" id="inputPassword3" placeholder="Old Password">
+												</div>
+												<div class="form-group">
+													<label for="inputPassword3" class="control-label">New Password</label>
+													<input type="password" class="form-control" id="inputPassword3" placeholder="New Password">
+												</div>
+												<div class="form-group">
+													<label for="inputPassword3" class="control-label">New Re-Password</label>
+													<input type="password" class="form-control" id="inputPassword3" placeholder="New Re-Password">
+												</div>
+												<div class="form-group">
+														
+														<button class="col-sm-5 btn btn-medium btn-primary pull-right">Reset Your Password</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div><!--end of modal-content-->
+					</div><!--end of modal-dialog-->
+				</div><!--end of modal-->
+			</div>
+		</div>
+
+
+
+					
+<div id="home"></div>
+<div id="portfolio"></div>
+<div id="about"></div>
+<div id="contact"></div>
+</body>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="js/lib/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="js/lib/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+<script src="js/script0.js"></script>
+
+</html>
