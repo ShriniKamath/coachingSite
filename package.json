@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Simple todo application.",
   "main": "server.js",
+  "scripts": {
+  "start": "node server.js"
+},
   "author": "Scotch",
   "dependencies": {
     "body-parser": "^1.4.3",

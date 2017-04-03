@@ -48,19 +48,19 @@ body, html {
 a {
     font-family:'Droid Sans', serif;
     font-size: 14px;
-    color: black;
+    /*color: black;*/
     text-decoration: none;
-    line-height: 50px;
+    /*line-height: 50px;*/
 }
 #home {
     background-color: grey;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url(../images/01ss.jpg);
+    /*background-image: url(../images/01ss.jpg);*/
 }
 #portfolio {
-    background-image: url(../images/01ss.jpg);
+    /*background-image: url(../images/01ss.jpg);*/
     height: 100%;
     width: 100%;
 }

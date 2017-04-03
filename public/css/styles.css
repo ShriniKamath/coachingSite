@@ -9,7 +9,6 @@ Notes:	 Hand coded for Udemy.com
 
 */
 
-
 /* --------------------------------------
 Layout
 -------------------------------------- */
@@ -84,14 +83,14 @@ article h2{
   margin-top:15px;
   font-size:40px;
 }
-footer{
+/*footer{
   background-color: #C5EFF7;
   margin-left: 0px;
-}
+}*/
 .footertext{
   margin-top:25px;
   float: right;
-}     
+}
 /* --------------------------------------
 Typography
 -------------------------------------- */
@@ -262,7 +261,7 @@ Media Queries
     background-size: 100% 500px;
   }
   #slide4{
-    background: url('../images/4.jpg') top left no-repeat;  
+    background: url('../images/4.jpg') top left no-repeat;
     background-size: 100% 500px;
   }
   #slide5{
@@ -341,4 +340,32 @@ Media Queries
   #font_res{
     font-size:13px;
   }
+}
+ul.unstyled{
+  list-style: none;
+  padding: 0;
+}
+footer{
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+.navbar-inner{
+    /*height: 90px*/
+    min-height: 60px
+    }
+.navbar .brand{
+    padding: 0 10px;
+}
+.navbar .nav > li > a {
+    padding: 20px 15px;
+    /*padding: 35px 15px;*/
+}
+.navbar .btn-navbar {
+    /*margin-right: 0px;*/
+    margin-top:15px;
+}
+.brand img{
+    margin-top: 5px
 }
